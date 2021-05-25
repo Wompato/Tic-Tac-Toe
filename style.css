@@ -1,0 +1,81 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: lightblue;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    font-size: 80px;
+}
+
+.score-board-divide {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+
+
+.game-board {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.game-board-cell {
+    border: 1px solid black;
+    background-color: white;
+    font-size: 160px;
+    text-align: center;
+}
+
+.hover {
+    color: grey;
+}
+
+.game-piece {
+    width: 60px;
+}
+
+.win-loss-modal {
+    position: fixed;
+    z-index: 1;
+    padding-top: 300px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(6px);
+}
+
+.win-loss-message {
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    font-size: 90px;
+    color: white;
+}
+
+button {
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
